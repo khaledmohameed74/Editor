@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="editor">
+            <div class="row">
+                <div class="col-sm-12 col-md-7 d-flex justify-content-center align-items-center">
+                    <div class="image-part">
+                        <div class="img" id="img-box">
+                            <img id="img" class="img-fluid" alt="">
+                            <canvas id="canvas" class="img-fluid mw-100"></canvas>
+                        </div>
+                        <div class="upload mb-4 mb-md-0">
+                            <label for="upload">Upload</label>
+                            <input type="file" id="upload">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                    <ul class="filters">
+                        <li>
+                            <input data-filter="true" type="range" id="saturate" min="0" max="200" value="100">
+                            <label for="saturate">Saturate</label>
+                        </li>
+                        <li>
+                            <input data-filter="true" type="range" id="contrast" min="0" max="200" value="100">
+                            <label for="contrast">Contrast</label>
+                        </li>
+                        <li>
+                            <input data-filter="true" type="range" id="brightness" min="0" max="200" value="100">
+                            <label for="brightness">Brightness</label>
+                        </li>
+                        <li>
+                            <input data-filter="true" type="range" id="sepia" min="0" max="200" value="0">
+                            <label for="sepia">Sepia</label>
+                        </li>
+                        <li>
+                            <input data-filter="true" type="range" id="grayscale" step="0.1" min="0" max="1" value="0">
+                            <label for="grayscale">Grayscale</label>
+                        </li>
+                        <li>
+                            <input data-filter="true" type="range" id="blur" step="0.1" min="0" max="10" value="0">
+                            <label for="blur">Blur</label>
+                        </li>
+                        <li>
+                            <input data-filter="true" type="range" id="hue-rotate" min="0" max="350" value="0">
+                            <label for="hue-rotate">Hue Rotate</label>
+                        </li>
+                        <li>
+                            <a class="btn" dawnload="image.png" id="dawnload">Dawnload</a>
+                            <span id="reset" class="btn">Reset</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/setup.js"></script>
+</body>
+
+</html>

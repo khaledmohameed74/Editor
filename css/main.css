@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    margin: auto;
+}
+
+.editor {
+    background-color: black;
+    padding: 40px 30px;
+    border-radius: 12px;
+}
+
+.image-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.image-part .img img,
+.image-part .img canvas {
+    max-height: 60vh;
+    width: auto;
+}
+
+.upload input {
+    display: none;
+}
+
+.upload label {
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px dashed #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #0075ff;
+}
+
+
+.filters,
+.filters li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    direction: rtl;
+    text-align: right;
+    color: #fff;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+
+.filters li input {
+    cursor: pointer;
+    height: 5px;
+}
+
+.filters li:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filters li a,
+.filters li span {
+    background-color: #0075ff;
+}
